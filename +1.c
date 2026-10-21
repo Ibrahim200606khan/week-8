@@ -1,19 +1,18 @@
-#include<stdio.h>
-int main(){
-int n,i,d1,d2,d3,d4,d5;
-printf("ENTER NUMBER: ");
-scanf("%d",&n);
-// operation //
-d5 = (n%10+1)%10; //   n%10==12991%10=1 //
-n = n/10; // n=n/10==12991/10=1299 //
-d4 = (n%10+1)%10;
-n = n/10;
-d3 = (n%10+1)%10;
-n = n/10;
-d2 = (n%10+1)%10;
-n = n/10;
-d1 = (n%10+1)%10;
-// output //
-printf("NEW NUMBER = %d%d%d%d%d",d1,d2,d3,d4,d5);
+#include <stdio.h>
+int main()
+{
+    int n, digit,num = 0,place = 1;
+printf("ENTER A 5-DIGIT NUMBER: ");
+scanf("%d", &n);
+// loop // 
+while(n > 0)
+{
+digit = n % 10;      // get last digit
+digit = digit + 1;   // add 1 to the digit
+num = num + (digit * place);
+place = place * 10;  // move to next place value
+n = n / 10;          // remove last digit
+}
+printf("NEW NUMBER = %d", newNum);
 return 0;
 }
