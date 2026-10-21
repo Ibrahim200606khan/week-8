@@ -1,15 +1,11 @@
 #include <stdio.h>
 int main(){
 int i,j;
-// rows //
-for(i=1;i<=5;i++)
+for(i=1;i<=5;i++) // ROWS //
 {
-j=1;
-// columns //
-while(j<=i)
+ for(j<=1;j<=i;j++) // COLUMNS //
 {
 printf("%d",j);
-j++;
 }
 printf("\n");
 }
