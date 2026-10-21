@@ -1,20 +1,19 @@
-#include<stdio.h>
-int main(){
-int up,low,i,num,prime;
-printf("ENTER UPPER AND LOWER LIMIT: ");
-scanf("%d %d",&up,&low);
-for(num=low;num<=up;num++) // check every number in the range //
++#include<stdio.h>
+int main()
 {
-prime=1;
-if(num<2) // cus 0 and 1 are not prime numbers //
-prime=0;
-for(i=2;i<=num;i++) // This checks whether any number can divide nums //
+int up,low,j,i,prime;
+printf("ENTER LOWER AND UPPER LIMITS: ");
+scanf("%d %d",&low,&up);
+ // how //
+for(i=low;i<=up;i++) // dividend //
 {
-if(num%i==0) // checks if i divides num exactly //
-{prime=0;break;} //  break Immediately exits the inner loop //
+for(j=2;j<i;j++) // divisor //
+{
+if(i%j==0)
+break;
 }
-if(prime) // If no divisor was found, print the number //
-printf("%d\n",num);
+if(j==i)
+{printf("%d\n",i);}
 }
 return 0;
 }
