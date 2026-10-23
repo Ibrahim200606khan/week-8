@@ -7,7 +7,7 @@ hcf = 1;  // initialize HCF to 1//
 
 for(i = 1; i <= a && i <= b; i++) // check all numbers from 1 to the smaller of a and b //
 {
-if(a%i == 0 &&b%i == 0)  // if i divides both numbers exactly //
+if(a%i == 0 && b%i == 0)  // if i divides both numbers exactly //
 {
 hcf = i;  // store current common factor
 }
