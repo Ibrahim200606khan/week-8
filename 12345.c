@@ -7,7 +7,7 @@ for(j<=1;j<=i;j++) // COLUMNS //
 {
 printf("%d",j);
 }
-printf("\n");
+printf("\n"); // for next lines //
 }
 return 0;
 }
